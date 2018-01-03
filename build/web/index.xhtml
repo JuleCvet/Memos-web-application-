@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv ="refresh" content="0" URL="memos"/>
+       
+        <title>My-memo</title>
+        <link rel="stylesheet" type="text/css" href="screen.css"/>
+    </head>
+    <body>
+        <div id="container">   
+            <div id="header">
+                <p>
+                    <b>My-Memo</b>- a simple web app for managing memos
+                </p>
+            </div>
+            <div id="content">
+                <h1>Add Memo:</h1>
+                <form method="POST" action="memos">
+                    <input type="text" name="memo" size="30"
+                           placeholder="Enter your memo here"/>
+                    <button type="submit" name="button" value="save">Add</button>
+                    
+                    <h1>My Memos</h1>
+                    <table>
+                        <tr>
+                            <th>Memo</th>
+                            <th>Saved</th>
+                        </tr>
+                        <tr>
+                            <td>Repair car</td>
+                            <td>12:00 2014-11-12</td>
+                        </tr>
+                        <tr>
+                            <td>Play cards</td>
+                            <td>13:13 2014-11-13</td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <button type="submit" name="button" value="reset">Reset list</button>
+                </form>
+            </div>
+            <div id="footer">
+                <p>(c) 2015 Schiesser/Schmollinger, MIT license</p>
+            </div>
+    </div>
+    </body>
+</html>
+
